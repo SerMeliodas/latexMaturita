@@ -1,0 +1,20 @@
+\babel@toc {nil}{}\relax 
+\contentsline {section}{\numberline {1}Uvod}{1}{section.1}%
+\contentsline {section}{\numberline {2}Teoretický základ}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Technológie a aplikácie ktore boly použite v projekte}{2}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Technológie použite pre 3D modely}{2}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Technológie použite pre napisanie WebStranky}{2}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}Definícia 3D vizualizácie}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Význam a aplikácie v obalovej technike}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Vlastnosti a parametre vhodné pre 3D vizualizáciu na obale}{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Webstranka ako prostriedok komunikacie}{4}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Prakticka časť}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Zadanie}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Rešerš a inšpiracia}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Firma}{6}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Vseobečna informacia}{6}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Logo}{6}{subsubsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.4}Modelovanie}{7}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Obal}{7}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Kľučenieky}{12}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Web stranka}{15}{subsubsection.3.4.3}%
