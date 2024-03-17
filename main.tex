@@ -28,7 +28,7 @@ Môj maturitný projekt sa zameriava na 3D vizualizáciu kľúčenok a obalu pre
 
     \subsection{Technológie a aplikácie ktore boly použite v projekte}
 
-      \subsubsection{Technológie použite pre 3D modely}
+      \subsubsection{Pre 3D modely}
         \begin{itemize}
           \item{
             Pre modelovanie kľúčeniek bola použita aplikácia \textbf{\href{https://www.blender.org/}{Blender}} 
@@ -38,6 +38,8 @@ Môj maturitný projekt sa zameriava na 3D vizualizáciu kľúčenok a obalu pre
           }
           \item{
               Pre nastavenia laserového rezacieho stroja bola použitá aplikácia \textbf{\href{https://lightburnsoftware.com/}{LightBurn}}.
+
+              LightBurn je ovládač na nastavenie mnohých rôznych typov laserových rezacích strojov. Má užívateľsky prívetivé grafické rozhranie. Môžete použiť nastavenia, ako je výkon, rýchlosť, počet priechodov, poradie rezov, jas a kontrast, režim ditheringu a mnohé ďalšie. Vyvinula spoločnosť LightBurn Software.
           }
           \item{
             Pre exportovanie objektov medzi Blender a webstrankov bola použita technológia \textbf{\href{https://www.khronos.org/gltf/}{gLTF}}
@@ -48,12 +50,13 @@ Môj maturitný projekt sa zameriava na 3D vizualizáciu kľúčenok a obalu pre
           }
         \end{itemize}
 
-      \subsubsection{Technológie použite pre napisanie WebStranky}
+      \subsubsection{Pre napisanie web stranky}
         \begin{itemize}
           \item{
             Pre napisanie kódu webstranky bol použity editor kódu \textbf{\href{https://neovim.io/}{NeoVim}}
 
             Neovim je fork Vimu, ktorého cieľom je vylepšiť kódovú základňu, umožniť jednoduchšiu implementáciu API, zlepšiť používateľské prostredie a implementáciu zásuvných modulov.
+            Vim je vysoko konfigurovateľný textový editor vytvorený na veľmi efektívne vytváranie a zmenu akéhokoľvek druhu textu. Je súčasťou väčšiny systémov UNIX a Apple OS X ako "vi".
           }
           \item{
             Programovaci jazyk \textbf{\href{https://developer.mozilla.org/en-US/docs/Web/JavaScript}{JavaScript}}
@@ -139,7 +142,7 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
           \includegraphics[width=12cm]{box/12}
         \end{center}
 
-        Hrúbku obalu som zvolil podľa preglejky, ktorú som mal k dispozícii (3mm). \\
+        Hrúbku obalu som zvolil podľa preglejky, ktorú som mal k dispozícii (4mm). \\
 
         \begin{center}
           \includegraphics[width=12cm]{box/13}
@@ -183,7 +186,7 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
           \includegraphics[width=14cm]{box/18}
         \end{center}
 
-        Pre orezavanie materiálu som exportoval UV rozloženie kazdey časti obalu do formátu .svg .
+        Pre orezavanie materiálu som exportoval UV rozloženie každého dielu obalu do formátu .svg .
 
         \begin{center}
           \includegraphics[width=14cm]{box/9}
@@ -195,6 +198,21 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
           \includegraphics[width=14cm]{box/10}
         \end{center}
 
+        Po vyrezaní obalov som ich zlepil špeciálnym PVA lepidlom pre drevo.
+
+        PVA lepidlo (polyvinylacetát) je disperzia polyvinylacetátu vo vode s plastifikátorom a špeciálnymi prísadami. Má charakteristický slabý zápach. Používa sa na lepenie rôznych materiálov. Ako napríklad papier, drevo atď.
+
+        \begin{center}
+          \includegraphics[height=14cm,angle=90]{box/19}
+          \vfill{}
+          \includegraphics[width=14cm]{box/20}
+        \end{center}
+
+        Hotový obal vyzerá nasledovne
+
+        \begin{center}
+          \includegraphics[width=14cm]{box/21}
+        \end{center}
       \subsubsection{Kľučenieky}
 
       Kľúčenky modeloval som podľa nájdenej inšpirácie na pinterest.
@@ -217,11 +235,11 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
 
             \includegraphics[width=14cm]{keychains/1}
 
-            Pridal som rez pre dosiahnutie rozšírenia objemu v tej časti.
+            Pridal som rez pre dosiahnutie rozšírenia objemu v strede dielu.
 
             \includegraphics[width=14cm]{keychains/2}
 
-            A vyhladil som objekt modifikatorom Subdivision Surface level 2. Ešte som aktivoval Smooth Shading.
+            Vyhladil som objekt modifikatorom Subdivision Surface level 2. Ešte som aktivoval Smooth Shading.
 
             \includegraphics[width=14cm]{keychains/4}
 
@@ -229,13 +247,17 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
 
             \includegraphics[width=14cm]{keychains/5}
 
-            A spojil som tie to tri objekty do kopy.
+            Spojil som tie to tri objekty do kopy.
 
             \includegraphics[width=14cm]{keychains/6}
         }
       \end{enumerate}
 
       \subsubsection{Web stranka}
+
+  \section{Cenova kalkulacia}
+
+  \section{Zaver}
 \end{document}
 
 % https://wiki.archlinux.org/title/Neovim
