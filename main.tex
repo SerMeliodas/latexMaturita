@@ -45,9 +45,6 @@ Môj maturitný projekt sa zameriava na 3D vizualizáciu kľúčenok a obalu pre
             Pre exportovanie objektov medzi Blender a webstrankov bola použita technológia \textbf{\href{https://www.khronos.org/gltf/}{gLTF}}
             gLTF je bezplatná špecifikácia pre efektívny prenos a načítanie 3D scén a modelov hernymy motormy a aplikáciami. glTF minimalizuje veľkosť 3D aktív a runtime spracovanie potrebné na ich rozbalenie a použitie. glTF definuje rozšíriteľný formát publikovania, ktorý zefektívňuje pracovné postupy tvorby a interaktívne služby tým, že umožňuje interoperabilné používanie 3D obsahu v celom odvetví. glTF 2.0 bol vydaný ako medzinárodná norma \textbf{\href{https://www.iso.org/standard/83990.html}{ISO/IEC 12113:2022}}.
           }
-          \item{
-            Pre odobrazenie 3D modelov na webstranke bola použita 3D knižnica jazyka JavaScript \textbf{\href{https://github.com/mrdoob/three.js/}{three.js}}
-          }
         \end{itemize}
 
       \subsubsection{Pre napisanie web stranky}
@@ -62,6 +59,12 @@ Môj maturitný projekt sa zameriava na 3D vizualizáciu kľúčenok a obalu pre
             Programovaci jazyk \textbf{\href{https://developer.mozilla.org/en-US/docs/Web/JavaScript}{JavaScript}}
 
             JavaScript (JS) je ľahký interpretovaný (alebo just-in-time skompilovaný) programovací jazyk s prvotriednymi funkciami.Je najznámejší ako skriptovací jazyk pre webové stránky.
+          }
+          \item{
+            Pre odobrazenie 3D modelov na webstranke bola použita 3D knižnica jazyka JavaScript \textbf{\href{https://github.com/mrdoob/three.js/}{three.js}}
+          }
+          \item{
+            Na animáciu modelov na webovej stránke bola použitá knižnica JavaScript \textbf{\href{https://tweenjs.github.io/tween.js/}{tween.js}}.
           }
           \item{
             Task-manager(správca úloh) \textbf{\href{https://gulpjs.com}{Gulp.js}}
@@ -136,25 +139,25 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
       \subsubsection{Obal}
         Obal som modeloval na mysli s tým, že chcem použiť ako materiál preglejku.
 
-        V prvom rade som pre uľahčenie modelovania nastavil zobrazovanie hodnôt v milimetroch tak, aby bolo vhodné ihneď vyrobiť model s presnými rozmermi \\
+        V prvom rade som pre uľahčenie modelovania nastavil zobrazovanie hodnôt v milimetroch tak, aby bolo vhodné ihneď vyrobiť model s presnými rozmermi: \\
 
         \begin{center}
           \includegraphics[width=12cm]{box/12}
         \end{center}
 
-        Hrúbku obalu som zvolil podľa preglejky, ktorú som mal k dispozícii (4mm). \\
+        Hrúbku obalu som zvolil podľa preglejky, ktorú som mal k dispozícii (4mm): \\
 
         \begin{center}
           \includegraphics[width=12cm]{box/13}
         \end{center}
 
-        Najprv som vytvoril kocku a pomocou rôznych nástrojov, ktoré nám Blender poskytuje, som vymodeloval spodnú časť obalu. \\
+        Najprv som vytvoril kocku a pomocou rôznych nástrojov, ktoré nám Blender poskytuje, som vymodeloval spodnú časť obalu: \\
 
         \begin{center}
           \includegraphics[width=12cm]{box/1}
         \end{center}
 
-        Tak isto boli spravene bočné strany \\
+        Tak isto boli spravene bočné strany: \\
 
         Dlhsia strana: \\
 
@@ -174,25 +177,25 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
           \includegraphics[width=12cm]{box/16}
         \end{center}
 
-        Na konci som zaoblil hostre okraje obalu. \\
+        Na konci som zaoblil hostre okraje obalu: \\
 
         \begin{center}
           \includegraphics[width=12cm]{box/17}
         \end{center}
 
-        3D vizualizácia hotoveho obalu \\
+        3D vizualizácia hotoveho obalu: \\
 
         \begin{center}
           \includegraphics[width=14cm]{box/18}
         \end{center}
 
-        Pre orezavanie materiálu som exportoval UV rozloženie každého dielu obalu do formátu .svg .
+        Pre orezavanie materiálu som exportoval UV rozloženie každého dielu obalu do formátu .svg:
 
         \begin{center}
           \includegraphics[width=14cm]{box/9}
         \end{center}
 
-        A v aplikacie LightBurn som nastavil orezavanie a presne rozmery obalu.
+        A v aplikacie LightBurn som nastavil orezavanie a presne rozmery obalu:
 
         \begin{center}
           \includegraphics[width=14cm]{box/10}
@@ -208,7 +211,7 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
           \includegraphics[width=14cm]{box/20}
         \end{center}
 
-        Hotový obal vyzerá nasledovne
+        Hotový obal vyzerá nasledovne:
 
         \begin{center}
           \includegraphics[width=14cm]{box/21}
@@ -217,47 +220,59 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
 
       Kľúčenky modeloval som podľa nájdenej inšpirácie na pinterest.
 
-      Príklad postupu modelovania par kľúčeniek:
+      Príklad postupu modelovania kľúčenky:
 
-      \begin{enumerate}
-        \item{
-            Rozdelil som objekt na par časti:
+      Rozdelil som objekt na par časti:
 
-            \begin{center}
-              \includegraphics[width=10cm]{keychains/9}
-            \end{center}
-        }
+      \begin{center}
+        \includegraphics[width=10cm]{keychains/9}
+      \end{center}
 
-        \item{
-            Prvú časť, ktorú som smodeloval bola vyznačená bielym.
+      Prvú časť, ktorú som smodeloval bola vyznačená bielym.
 
-            Spravil som zakladnu formu.
+      Spravil som zakladnu formu:
 
-            \includegraphics[width=14cm]{keychains/1}
+      \includegraphics[width=14cm]{keychains/1}
 
-            Pridal som rez pre dosiahnutie rozšírenia objemu v strede dielu.
+      Pridal som strih na zväčšenie objemu v strednej časti modelu. \\
 
-            \includegraphics[width=14cm]{keychains/2}
+      \includegraphics[width=14cm]{keychains/2}
 
-            Vyhladil som objekt modifikatorom Subdivision Surface level 2. Ešte som aktivoval Smooth Shading.
+      Objekt som vyhladil pomocou modifikátora Subdivision Surface na úrovni 2. Aktivoval som funkciu Smooth Shading (Hladké tieňovanie), aby som dosiahol efekt vyhladenia objektu: \\
 
-            \includegraphics[width=14cm]{keychains/4}
+      \includegraphics[width=14cm]{keychains/4}
 
-            Skopíroval som objekt 2 krát a otočil tak, ako je na obrázku:
+      Objekt som skopíroval 2-krát a otočil ho tak, ako je znázornené: \\
 
-            \includegraphics[width=14cm]{keychains/5}
+      \includegraphics[width=14cm]{keychains/5}
 
-            Spojil som tie to tri objekty do kopy.
+      Všetky tri objekty som spojila do jedného. \\
 
-            \includegraphics[width=14cm]{keychains/6}
-        }
-      \end{enumerate}
+      \includegraphics[width=14cm]{keychains/6}
+
+      \newpage
+      Potom som v strede objektu vyrezal dieru pomocou modifikátora Boolean. Pidal som poslednu čast modelu: \\
+
+      \includegraphics[width=14cm]{keychains/7}
+
+      Na záver som pridal kruh, ktorý drží kľúčenku na kľúčoch: \\
+
+      \includegraphics[width=14cm]{keychains/8}
+
+      \newpage
+      Render kľúčenky: \\
+
+      \includegraphics[width=14cm]{keychains/10}
 
       \subsubsection{Web stranka}
 
   \section{Cenova kalkulacia}
 
   \section{Zaver}
+
+  \section{Zoznam použitej literatúry}
 \end{document}
 
 % https://wiki.archlinux.org/title/Neovim
+% https://cs.puntomarinero.com/pva-glue-composition-and-characteristics/
+% https://habr.com/ru/companies/lpcloud/articles/236439/
