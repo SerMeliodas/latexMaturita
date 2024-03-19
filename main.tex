@@ -45,6 +45,9 @@ Môj maturitný projekt sa zameriava na 3D vizualizáciu kľúčenok a obalu pre
             Pre exportovanie objektov medzi Blender a webstrankov bola použita technológia \textbf{\href{https://www.khronos.org/gltf/}{gLTF}}
             gLTF je bezplatná špecifikácia pre efektívny prenos a načítanie 3D scén a modelov hernymy motormy a aplikáciami. glTF minimalizuje veľkosť 3D aktív a runtime spracovanie potrebné na ich rozbalenie a použitie. glTF definuje rozšíriteľný formát publikovania, ktorý zefektívňuje pracovné postupy tvorby a interaktívne služby tým, že umožňuje interoperabilné používanie 3D obsahu v celom odvetví. glTF 2.0 bol vydaný ako medzinárodná norma \textbf{\href{https://www.iso.org/standard/83990.html}{ISO/IEC 12113:2022}}.
           }
+          \item{
+            Materiál PBR, čo je vlastne skratka pre fyzikálne založený renderovací materiál, je virtuálne materiálové potrubie, ktoré dokáže simulovať akýkoľvek druh fyzikálneho materiálu, a tým najmä vylepšiť 3D model.
+          }
         \end{itemize}
 
       \subsubsection{Pre napisanie web stranky}
@@ -134,48 +137,34 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
       \end{center}
 
     \subsection{Modelovanie}
-      Pri modelovaní som použil rôzne nastroje ktore poskytuje Blender. Ako napríklad Extrude, Shader ediror, UV editor, Modiffires, Move, Rotate, Scale a td.
+      Pri modelovaní som použil rôzne nastroje ktore poskytuje Blender. Ako napríklad Extrude, Shader ediror, UV editor, Modiffires, Move, Rotate, Scale a td. Pri modelovani som použil dva rôzne štyle postupovania:
+      \begin{itemize}
+        \item{Polygónové modelovanie}
+        \item{NURBS modelovanie}
+      \end{itemize}
 
       \subsection{Obal}
         Obal som modeloval na mysli s tým, že chcem použiť ako materiál preglejku.
 
-        V prvom rade som pre uľahčenie modelovania nastavil zobrazovanie hodnôt v milimetroch tak, aby bolo vhodné ihneď vyrobiť model s presnými rozmermi: \\
+        V prvom rade som pre uľahčenie modelovania nastavil zobrazovanie hodnôt v milimetroch tak, aby bolo vhodné ihneď vyrobiť model s presnými rozmermi.
 
-        \begin{center}
-          \includegraphics[width=10cm]{box/12}
-        \end{center}
+        Hrúbku obalu som zvolil podľa preglejky, ktorú som mal k dispozícii (4mm).
 
-        Hrúbku obalu som zvolil podľa preglejky, ktorú som mal k dispozícii (4mm): \\
+        Najprv som vytvoril kocku a pomocou rôznych nástrojov, ktoré nám Blender poskytuje, som vymodeloval spodnú časť obalu:
 
-        \begin{center}
-          \includegraphics[width=5cm]{box/13}
-        \end{center}
-
-        Najprv som vytvoril kocku a pomocou rôznych nástrojov, ktoré nám Blender poskytuje, som vymodeloval spodnú časť obalu: \\
-
-        \begin{center}
-          \includegraphics[width=10cm]{box/1}
-        \end{center}
+        \begin{tabular}{c c}
+          \includegraphics[width=6cm]{box/12} &  \includegraphics[width=6cm]{box/1}
+          Rozmery & Spodna časť \\
+        \end{tabular}
 
         Tak isto boli spravene bočné strany: \\
 
-        Dlhsia strana: \\
-
-        \begin{center}
-          \includegraphics[width=10cm]{box/14} \\
-        \end{center}
-
-        Kratsia strana: \\
-
-        \begin{center}
-          \includegraphics[width=10cm]{box/15}
-        \end{center}
-
-        Posledna horna cast modelu: \\
-
-        \begin{center}
-          \includegraphics[width=10cm]{box/16}
-        \end{center}
+        \begin{tabular}{c c}
+          \includegraphics[width=6cm]{box/14} & \includegraphics[width=6cm]{box/15} \\
+          Dlhsia strana & Kratsia strana \\
+          \multicolumn{2}{c}{\includegraphics[width=8cm]{box/16}} \\
+          \multicolumn{2}{c}{Posledna horna cast modelu:}
+        \end{tabular}
 
         Na konci som zaoblil hostre okraje obalu: \\
 
@@ -189,28 +178,20 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
           \includegraphics[width=10cm]{box/18}
         \end{center}
 
-        Pre orezavanie materiálu som exportoval UV rozloženie každého dielu obalu do formátu .svg:
+        Pre orezavanie materiálu som exportoval UV rozloženie každého dielu obalu do formátu .svg. A v aplikacie LightBurn som nastavil orezavanie a presne rozmery obalu:
 
-        \begin{center}
-          \includegraphics[width=10cm]{box/9}
-        \end{center}
-
-        A v aplikacie LightBurn som nastavil orezavanie a presne rozmery obalu:
-
-        \begin{center}
-          \includegraphics[width=10cm]{box/10}
-        \end{center}
+        \begin{tabular}{c c}
+          \includegraphics[height=6cm]{box/9} & \includegraphics[width=6cm]{box/10} \\
+          UV rozloženie & LightBurn \\
+        \end{tabular}
 
         Po vyrezaní obalov som ich zlepil špeciálnym PVA lepidlom pre drevo.
 
-        PVA lepidlo (polyvinylacetát) je disperzia polyvinylacetátu vo vode s plastifikátorom a špeciálnymi prísadami. Má charakteristický slabý zápach. Používa sa na lepenie rôznych materiálov. Ako napríklad papier, drevo atď.
+        PVA lepidlo (polyvinylacetát) je disperzia polyvinylacetátu vo vode s plastifikátorom a špeciálnymi prísadami. Má charakteristický slabý zápach. Používa sa na lepenie rôznych materiálov. Ako napríklad papier, drevo atď. \\
 
-        \begin{center}
-          \includegraphics[height=10cm,angle=90]{box/19}
-          \vfill{}
-          \includegraphics[width=10cm]{box/20}
-        \end{center}
-
+        \begin{tabular}{c c}
+          \includegraphics[height=5.65cm,angle=90]{box/19} & \includegraphics[width=8cm]{box/20} \\
+        \end{tabular}
         Hotový obal vyzerá nasledovne:
 
         \begin{center}
@@ -222,22 +203,16 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
 
         Príklad postupu modelovania kľúčenky:
 
-        Vizuálne som rozdelil objekt na par časti:
+        Vizuálne som rozdelil objekt na par časti. Prvú časť, ktorú som smodeloval bola vyznačená bielym. Spravil som zakladnu formu a pridal som strih na zväčšenie objemu v strednej časti modelu. \\
+
+        \begin{tabular}{c c}
+          \includegraphics[width=6cm]{keychains/9} & \includegraphics[width=6cm]{keychains/1} \\
+          1 & 2 \\
+        \end{tabular}
 
         \begin{center}
-          \includegraphics[width=10cm]{keychains/9}
-        \end{center}
-
-        Prvú časť, ktorú som smodeloval bola vyznačená bielym.
-
-        Spravil som zakladnu formu:
-        \begin{center}
-          \includegraphics[width=10cm]{keychains/1}
-        \end{center}
-
-        Pridal som strih na zväčšenie objemu v strednej časti modelu. \\
-        \begin{center}
-          \includegraphics[width=10cm]{keychains/2}
+          \includegraphics[width=6cm]{keychains/2} \\
+          3
         \end{center}
 
         Objekt som vyhladil pomocou modifikátora Subdivision Surface na úrovni 2. Aktivoval som funkciu Smooth Shading (Hladké tieňovanie), aby som dosiahol efekt vyhladenia objektu: \\
@@ -277,16 +252,23 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
 
       \subsubsection{Kód}
 
+  \newpage
   \section{Cenova kalkulacia}
 
+  \newpage
   \section{Zaver}
 
+  \newpage
   \section{Zoznam použitej literatúry}
 
     \begin{enumerate}
       \item{
           Oficiálna wikipedia operačného systému arch linux \\
           \url{https://wiki.archlinux.org/title/Neovim}
+      }
+      \item{
+          Štyly modelovania\\
+          \url{https://akidon-y.github.io/site/rangs.html}
       }
       \item{
           "Habr" webová stránka vo formáte systému tematických kolektívnych blogov. Príspevok o psychológii farieb.\\
