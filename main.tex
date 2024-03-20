@@ -37,12 +37,18 @@ Môj maturitný projekt sa zameriava na 3D vizualizáciu kľúčenok a obalu pre
             Blender je multiplatformový a funguje rovnako dobre na počítačoch ktore použivau operačne systemy ako Linux, Windows a Macintosh.
           }
           \item{
-              Pre nastavenia laserového rezacieho stroja bola použitá aplikácia \textbf{\href{https://lightburnsoftware.com/}{LightBurn}}.
-
-              LightBurn je ovládač na nastavenie mnohých rôznych typov laserových rezacích strojov. Má užívateľsky prívetivé grafické rozhranie. Môžete použiť nastavenia, ako je výkon, rýchlosť, počet priechodov, poradie rezov, jas a kontrast, režim ditheringu a mnohé ďalšie. Vyvinula spoločnosť LightBurn Software.
+              Pre navrhnutie loga bola použita aplikácia \textbf{\href{https://inkscape.org/}{Inkscape}}
           }
           \item{
-            Pre exportovanie objektov medzi Blender a webstrankov bola použita technológia \textbf{\href{https://www.khronos.org/gltf/}{gLTF}}
+              Pre navrhnutie disajnu stranky bola použita aplikácia \textbf{\href{https://penpot.app/}{Penpot}}
+          }
+          \item{
+            Pre nastavenia laserového rezacieho stroja bola použitá aplikácia \textbf{\href{https://lightburnsoftware.com/}{LightBurn}}.
+
+            LightBurn je ovládač na nastavenie mnohých rôznych typov laserových rezacích strojov. Má užívateľsky prívetivé grafické rozhranie. Môžete použiť nastavenia, ako je výkon, rýchlosť, počet priechodov, poradie rezov, jas a kontrast, režim ditheringu a mnohé ďalšie. Vyvinula spoločnosť LightBurn Software.
+          }
+          \item{
+            Pre exportovanie objektov medzi Blender a webstrankov bola použitá technológia \textbf{\href{https://www.khronos.org/gltf/}{gLTF}}
             gLTF je bezplatná špecifikácia pre efektívny prenos a načítanie 3D scén a modelov hernymy motormy a aplikáciami. glTF minimalizuje veľkosť 3D aktív a runtime spracovanie potrebné na ich rozbalenie a použitie. glTF definuje rozšíriteľný formát publikovania, ktorý zefektívňuje pracovné postupy tvorby a interaktívne služby tým, že umožňuje interoperabilné používanie 3D obsahu v celom odvetví. glTF 2.0 bol vydaný ako medzinárodná norma \textbf{\href{https://www.iso.org/standard/83990.html}{ISO/IEC 12113:2022}}.
           }
           \item{
@@ -132,15 +138,27 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
       \subsubsection{Logo}
       Font pre logo: \textbf{\href{https://fonts.google.com/specimen/Teko?query=Teko}{Teko}}
 
+      Logo bolo vytvorené na základe názvu spoločnosti s použitím uvedeného písma. Názov spoločnosti možno rozdeliť na dve časti G a KChains. Veľké písmeno G znamená "game" (z anglického Hra), druhá časť je skratkou slova keychains (z anglického Kľúčenka).
+
       \begin{center}
         \includegraphics{logo}
       \end{center}
 
     \subsection{Modelovanie}
-      Pri modelovaní som použil rôzne nastroje ktore poskytuje Blender. Ako napríklad Extrude, Shader ediror, UV editor, Modiffires, Move, Rotate, Scale a td. Pri modelovani som použil dva rôzne štyle postupovania:
+      Pri modelovaní som použil rôzne nastroje ktore poskytuje Blender. Ako napríklad Extrude, Shader ediror, UV editor, Modiffires, Move, Rotate, Scale a td. Pri modelovani som použil dva rôzne štyle modelovania:
       \begin{itemize}
-        \item{Polygónové modelovanie}
-        \item{NURBS modelovanie}
+        \item{
+            Polygónové modelovanie
+
+            Ide o prvý a najzákladnejší typ modelovania, pretože s jeho pomocou môžete vytvoriť objekt akejkoľvek zložitosti spojením skupín polygónov.
+            Polygónové modelovanie umožňuje vykonávať rôzne manipulácie so sieťou 3d objektu na úrovni čiastkových objektov: vrcholov, hrán, plôch.
+        }
+        \item{
+            Modelovanie pomocou splajnov
+
+            Výhodou tejto metódy vo flexibilite zmeny tvaru splajnu.
+            Tento typ modelovania sa často porovnáva s polygonálnym, ako vektorová grafika s rastrovou. Výhodou vektorovej grafiky je, že pri zväčšení objektu sa jeho kvalita nemení, na rozdiel od rastra, kde sa pixely stávajú viditeľnými. Podobne pri zväčšení objektu vytvoreného pomocou splajnov zostane jeho kvalita nezmenená, zatiaľ čo pri polygonálnom modelovaní sa zobrazia polygóny.
+        }
       \end{itemize}
 
       \subsection{Obal}
@@ -153,7 +171,7 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
         Najprv som vytvoril kocku a pomocou rôznych nástrojov, ktoré nám Blender poskytuje, som vymodeloval spodnú časť obalu:
 
         \begin{tabular}{c c}
-          \includegraphics[width=6cm]{box/12} &  \includegraphics[width=6cm]{box/1}
+          \includegraphics[width=6cm]{box/12} &  \includegraphics[width=6cm]{box/1} \\
           Rozmery & Spodna časť \\
         \end{tabular}
 
@@ -166,7 +184,7 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
           \multicolumn{2}{c}{Posledna horna cast modelu:}
         \end{tabular}
 
-        Na konci som zaoblil hostre okraje obalu: \\
+        Na konci som zaoblil hostre okraje obalu:
 
         \begin{center}
           \includegraphics[width=10cm]{box/17}
@@ -183,7 +201,7 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
         \begin{tabular}{c c}
           \includegraphics[height=6cm]{box/9} & \includegraphics[width=6cm]{box/10} \\
           UV rozloženie & LightBurn \\
-        \end{tabular}
+        \end{tabular} \\
 
         Po vyrezaní obalov som ich zlepil špeciálnym PVA lepidlom pre drevo.
 
@@ -195,7 +213,7 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
         Hotový obal vyzerá nasledovne:
 
         \begin{center}
-          \includegraphics[width=10cm]{box/21}
+          \includegraphics[width=8cm]{box/21}
         \end{center}
       \subsection{Kľučenky}
 
@@ -240,20 +258,101 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
           \includegraphics[width=10cm]{keychains/8}
         \end{center}
 
-        \newpage
         Render kľúčenky: \\
         \begin{center}
           \includegraphics[width=10cm]{keychains/10}
         \end{center}
 
       \subsection{Web stranka}
+      Jednou z hlavných úloh tohto projektu bolo vytvoriť webovú stránku pre zákazníkov, kde by si mohli objednať rôzne služby poskytované spoločnosťou. A prostredníctvom ktorej by zákazníci mohli spoločnosť kontaktovať.
 
+      Vedený touto myšlienkou som sa rozhodol vytvoriť webovú stránku. Aby som mohol začať, vyhľadal som všetky potrebné informácie a inšpiráciu. Pri hľadaní inšpirácie som si na internete pozrel mnoho webových stránok rôznych spoločností a zistil som, že zatiaľ takmer všetky začínajúce spoločnosti používajú webové stránky v štýle landing page.
+
+      Landing page je jednostránková internetová stránka so stručnými informáciami o produkte, službe alebo udalosti. Jej úlohou je premeniť návštevníkov na zákazníkov.
+ 
       \subsubsection{Disajn}
+      Dizajn bol vyhotovený v zelenej farbe a v rôznych odtieňoch tejto farby. Táto farba bol, pretože podľa psychológie farieb je vhodná na prilákanie klientov oboch pohlaví. Hotovú paletu farieb som našiel na stránke \textbf{\href{https://color.adobe.com/ru/}{Adobe Color}}.
+
+      \begin{center}
+        \includegraphics[width=10cm]{web/1}
+      \end{center}
+
+      Stránku som rozdelil do niekoľkých sekcií: \\
+
+      \begin{enumerate}
+        \item{
+            \textbf{Header(Hlavička)}
+
+            Do záhlavia som pridal logo a navigáciu na webovej stránke.
+
+            \begin{center}
+              \includegraphics[width=13cm]{web/4}
+            \end{center}
+        }
+        \item{
+            \textbf{Hlavna sekcia}
+
+            Hlavná časť obsahuje niekoľko renderov kľúčenky, logo a tlačidlo objednávky, ktoré vás presmeruje do sekcie "Kontaktujte nás".
+
+            \begin{center}
+              \includegraphics[width=13cm]{web/5}
+            \end{center}
+        }
+        \item{
+            \textbf{O nas}
+
+            Základné informácie o spoločnosti (pri vytváraní návrhu som tam vložil zástupný text, tzv. fish text).
+
+            \begin{center}
+              \includegraphics[width=13cm]{web/6}
+            \end{center}
+        }
+        \item{
+            \textbf{Naše producty}
+
+            Táto časť predstavuje 3d modely, na ktoré sa dá pozerať z rôznych uhlov.
+
+            \begin{center}
+              \includegraphics[width=13cm]{web/7}
+            \end{center}
+        }
+        \item{
+            \textbf{Kontaktujte nas}
+
+            V tejto časti sú uvedené možnosti, ako kontaktovať spoločnosť.
+
+            \begin{center}
+              \includegraphics[width=13cm]{web/8}
+            \end{center}
+        }
+      \end{enumerate}
+
+      % \begin{center}
+      %   \textbf{Hotovy navrh:}
+      %
+      %   \includegraphics[width=13cm]{web/9}
+      % \end{center}
 
       \subsubsection{Kód}
 
   \newpage
   \section{Cenova kalkulacia}
+
+  \begin{tabular}{| m{7cm} | m{7cm} |}
+    \hline
+    Preglejka z dubu 4mm & 15\EurCr \\
+    \hline
+    Rez preglejky & 1\EurCr \\
+    \hline
+    Blender & 0\EurCr \\
+    \hline
+    Inkscape & 0\EurCr \\
+    \hline
+    Penpot & 0\EurCr \\
+    \hline
+    NeoVim & 0\EurCr \\
+    \hline
+  \end{tabular}
 
   \newpage
   \section{Zaver}
@@ -278,9 +377,13 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
           Príspevok o PVA lepidle \\
           \url{https://t.ly/JRhHG}
       }
+      % \item{
+      %     Dokumentácia \textbf{three.js} \\
+      %     \url{https://threejs.org/docs/index.html#manual/en/}
+      % }
       \item{
-          Dokumentácia \textbf{three.js} \\
-          \url{https://threejs.org/docs/index.html#manual/en/}
+          Príspevok o landing page \\
+          \url{https://www.sberbank.ru/ru/s_m_business/pro_business/kak-sozdat-prodayushchij-lending-dlya-prodazh/}
       }
     \end{enumerate}
 \end{document}
