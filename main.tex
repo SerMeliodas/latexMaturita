@@ -1,6 +1,5 @@
 \input{preamble}
 \input{commands}
-
 \begin{document}
   \setlength{\emergencystretch}{10pt}
   \setcounter{page}{0}
@@ -9,6 +8,7 @@
   \include{introduction}
 
   \setcounter{tocdepth}{5}
+  \setcounter{secnumdepth}{5}
 
   \renewcommand{\contentsname}{Obsah}
   \tableofcontents
@@ -68,6 +68,12 @@ Môj maturitný projekt sa zameriava na 3D vizualizáciu kľúčenok a obalu pre
             Programovaci jazyk \textbf{\href{https://developer.mozilla.org/en-US/docs/Web/JavaScript}{JavaScript}}
 
             JavaScript (JS) je ľahký interpretovaný (alebo just-in-time skompilovaný) programovací jazyk s prvotriednymi funkciami.Je najznámejší ako skriptovací jazyk pre webové stránky.
+          }
+          \item{
+            \textbf{\href{https://sass-lang.com/}{SASS}} - najvyzretejší, najstabilnejší a najvýkonnejší profesionálny rozširujúci jazyk CSS na svete.
+          }
+          \item{
+            \textbf{\href{https://yandex.ru/dev/bem/}{BEM}} (Block, Element, Modifier) je komponentový prístup k vývoju webových stránok, ktorý je založený na princípe rozdelenia rozhrania do nezávislých blokov. Vyvynuta v Yandexe.
           }
           \item{
             Pre odobrazenie 3D modelov na webstranke bola použita 3D knižnica jazyka JavaScript \textbf{\href{https://github.com/mrdoob/three.js/}{three.js}}
@@ -233,24 +239,22 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
           3
         \end{center}
 
-        Objekt som vyhladil pomocou modifikátora Subdivision Surface na úrovni 2. Aktivoval som funkciu Smooth Shading (Hladké tieňovanie), aby som dosiahol efekt vyhladenia objektu: \\
+        Objekt som vyhladil pomocou modifikátora Subdivision Surface na úrovni 2, aktivoval som funkciu Smooth Shading (plynulé tieňovanie), aby som dosiahol efekt vyhladenia a objekt som 2-krát skopíroval a otočil, ako je znázornené na obrázku. Všetky tri objekty som spojila do jedného. \\
         \begin{center}
-          \includegraphics[width=10cm]{keychains/4}
+          \begin{tabular}{c c}
+            \includegraphics[width=6cm]{keychains/4} & \includegraphics[width=6cm]{keychains/5} \\
+            1 & 2 \\
+          \end{tabular}
         \end{center}
 
-        Objekt som skopíroval 2-krát a otočil ho tak, ako je znázornené: \\
         \begin{center}
-          \includegraphics[width=10cm]{keychains/5}
-        \end{center}
-
-        Všetky tri objekty som spojila do jedného. \\
-        \begin{center}
-          \includegraphics[width=10cm]{keychains/6}
+          \includegraphics[width=6cm]{keychains/6} \\
+          3
         \end{center}
 
         Potom som v strede objektu vyrezal dieru pomocou modifikátora Boolean. Pidal som poslednu čast modelu: \\
         \begin{center}
-          \includegraphics[width=10cm]{keychains/7}
+          \includegraphics[width=6cm]{keychains/7}
         \end{center}
 
         Na záver som pridal kruh, ktorý drží kľúčenku na kľúčoch: \\
@@ -327,13 +331,161 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
         }
       \end{enumerate}
 
-      % \begin{center}
-      %   \textbf{Hotovy navrh:}
-      %
-      %   \includegraphics[width=13cm]{web/9}
-      % \end{center}
+      \newpage
+
+      \begin{center}
+        \textbf{Hotovy navrh:}
+
+        \includegraphics[width=9cm]{web/9}
+      \end{center}
 
       \subsubsection{Kód}
+      Napísal som webovú stránku pomocou HTML, CSS a programovacieho jazyka javascript. Táto časť opisuje, ako som implementoval webovú stránku.
+      Pre uľahčenie som použil svoju \textbf{\href{https://github.com/SerMeliodas/gulp-template}{šablónu}} pre gulp ktora je v publickom dostupe na mojom GitHub.
+
+      \subsubsection*{HTML + SCSS}
+
+      Kód som písal postupne od hlavičky po časť "Kontaktujte nás". Pri písaní stránky som použil metodiku BEM.
+      V kóde boli použité rôzne tagy ktore nam poskytuje HTML versie 5.
+
+      \subsubsection*{Scss premenne}
+      Tu sú definované farebné premenné pre štýly, ktoré možno ďalej používať s týmito názvami
+      \begin{lstlisting}[language=css]
+$background-color: #005a5b ;
+$first-color: #003840;
+$second-color: #007369;
+$third-color: #008c72;
+$fourth-color: #02a676;
+      \end{lstlisting}
+
+      \subsubsection*{Štýly vynulovania}
+      Slúžia na resetovanie štandartnych štýlov priradených tagom prehliadačom
+\begin{lstlisting}[language=css]
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+b,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+\end{lstlisting}
+
+      \subsubsection*{Hlavička}
+\begin{lstlisting}[language=html]
+<header class="header">
+  <div class="wrapper">
+    <img class="header__logo" src="svg/logo.svg" alt="logo">
+    <div class="header__nav-bar nav-bar">
+      <div class="nav-bar__item"><a href="#about">O nas</a></div>
+      <div class="nav-bar__item"><a href="#products">Naše producty</a></div>
+      <div class="nav-bar__item"><a href="#contact-form">Kontakt</a></div>
+    </div>
+  </div>
+</header>
+\end{lstlisting}
+
+    \subsubsection*{Hlavna sekcia}
+\begin{lstlisting}[language=html]
+<section class="main">
+  <div class="wrapper">
+    <img class="main__prerender" src="img/prerender.png" alt="prerender">
+    <div class="main__right">
+      <img class="main__logo" src="svg/logowhite.svg" alt="logo">
+      <div class="main__button button"><a href="#contact-form">OBJEDNAŤ</a></div>
+    </div>
+  </div>
+</section>
+\end{lstlisting}
+
+      \subsubsection*{Sekcia "O nas"}
+\begin{lstlisting}[language=html]
+<section class="about">
+  <a name="about"></a>
+  <div class="wrapper">
+    <div class="about__subtitle subtitle">O nas</div>
+    <div class="about__content">
+      Naša spoločnosť sa zaoberá ponukou služieb, ako je vývoj modelu podľa vašich požiadaviek, predaj hotových riešení, tlač vašich modelov na 3D tlačiarni.
+    </div>
+  </div>
+</section>
+\end{lstlisting}
+
+      \subsubsection*{Sekcia "Producty"}
+\begin{lstlisting}[language=html]
+<section class="products">
+  <a name="products" ></a>
+  <div class="wrapper">
+    <div class="products__subtitle subtitle">Naše producty</div>
+    <div class="products__buttons">
+      <img draggable="false" class="products__scroll" id="backward" src="svg/left_arrow.svg" alt="left_arrow">
+      <img draggable="false" class="products__scroll" id="forward" src="svg/right_arrow.svg" alt="right_arrow">
+    </div>
+  </div>
+  <div id="scene" class="products__scene" >
+  </div>
+</section>
+\end{lstlisting}
+
+      \subsubsection*{Sekcia "Kontaktujte nas"}
+\begin{lstlisting}[language=html]
+<section class="contact-form">
+  <a name="contact-form"></a>
+  <div class="contact-form__subtitle subtitle">Kontaktujte nas</div>
+  <div class="wrapper">
+    <div class="contact-form__left">
+      <form class="contact-form__form" action="">
+        <div class="contact-form__fio">
+          <input class="contact-form__input" type="text" placeholder="MENO" >
+          <input class="contact-form__input" type="text" placeholder="PRIEZVISKO">
+        </div>
+        <input class="contact-form__input" type="email" placeholder="EMAIL"><br>
+        <textarea class="contact-form__message contact-form__input" placeholder="SPRAVA"></textarea>
+        <div class="contact-form__button button">ODOSLAŤ</div>
+      </form>
+    </div>
+    <div class="contact-form__right">
+      <div class="contact-form__text">
+        Alebo možte použit naše socialne sieťe
+      </div>
+      <div class="contact-form__contacts">
+        <a href="#"><img class="contact-form__social" src="svg/instagram.svg" alt="instagram"></a>
+        <a href="#"><img class="contact-form__social" src="svg/telegram.svg" alt="telegram"></a>
+        <a href="#"><img class="contact-form__social" src="svg/email.svg" alt="email"></a>
+      </div>
+    </div>
+  </div>
+</section>
+\end{lstlisting}
+      \subsubsection*{JavaScript}
 
   \newpage
   \section{Cenova kalkulacia}
@@ -352,6 +504,9 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
     \hline
     NeoVim & 0\EurCr \\
     \hline
+    \textbf{Súčet} & 16\EurCr \\
+    \hline
+
   \end{tabular}
 
   \newpage
@@ -370,17 +525,13 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
           \url{https://akidon-y.github.io/site/rangs.html}
       }
       \item{
-          "Habr" webová stránka vo formáte systému tematických kolektívnych blogov. Príspevok o psychológii farieb.\\
+          Príspevok o psychológii farieb.\\
           \url{https://habr.com/ru/companies/lpcloud/articles/236439/}
       }
       \item{
           Príspevok o PVA lepidle \\
           \url{https://t.ly/JRhHG}
       }
-      % \item{
-      %     Dokumentácia \textbf{three.js} \\
-      %     \url{https://threejs.org/docs/index.html#manual/en/}
-      % }
       \item{
           Príspevok o landing page \\
           \url{https://www.sberbank.ru/ru/s_m_business/pro_business/kak-sozdat-prodayushchij-lending-dlya-prodazh/}
