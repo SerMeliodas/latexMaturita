@@ -549,7 +549,8 @@ function smoothRotate(angle) {
   modelsGroupTween.easing(TWEEN.Easing.Quadratic.InOut).onComplete(() => {flag = false}).to({ y: rotateTo }, 1000).start();
 }
 \end{lstlisting}
-        Funkcie, ktoré načítajú modely na webovú stránku a umiestňujú ich na scénu:
+
+        Funkcie, ktoré načítajú modely na webovej stránke a umiestňujú ich na scénu. Umiestnenie sa vypočíta pomocou komponentu th.EllipseCurve, čo znamená, že modely sa umiestnia na konkrétne body na kružnici:
 \begin{lstlisting}[language=javascript]
 // load gltf2 model
 function loadModel(url) {
@@ -577,6 +578,7 @@ function loadModels(models) {
   scene.add(modelsGroup);
 }
 \end{lstlisting}
+
         Funkcia, ktorá animuje modely na webovej stránke:
 \begin{lstlisting}[language=javascript]
 // animations
@@ -590,6 +592,7 @@ function animate(time) {
   composer.render();
 }
 \end{lstlisting}
+
         Funkcia, ktorá pridáva smerové svetlo na scénu:
 \begin{lstlisting}[language=javascript]
 //add  directional light
@@ -602,7 +605,8 @@ function addLight() {
   scene.add(hemisphereLight);
 }
 \end{lstlisting}
-        Funkcia, ktorá inicializuje celé nastavenia a scénu:
+
+        Hlavna funkcia, ktorá inicializuje všetky nastavenia a scénu. Tu môžete vidieť, ako sa inicializuje scéna a všetky potrebné prvky potrebné na zobrazenie modelov na webovej stránke. Napríklad výber kontajnera pre scénu na webovej stránke pomocou selektora id.:
 \begin{lstlisting}[language=javascript]
 function init() {
   container = document.getElementById("scene");
