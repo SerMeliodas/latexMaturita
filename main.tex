@@ -17,8 +17,7 @@
 
   \pagenumbering{arabic}
   \setcounter{page}{1}
-  \section{Uvod}
-
+  \section*{Uvod}\addcontentsline{toc}{section}{Uvod}
   S ústupom doby a rastúcim vplyvom digitálnej technológie sa otvárajú nové možnosti v oblasti vizualizácie a personalizácie každodenných predmetov. V súčasnej dobe sa stáva čoraz bežnejším trendom prispôsobovať si svoje okolie podľa vlastných preferencií a štýlu. V tomto kontexte vzniká aj záujem o 3D vizualizáciu, ktorá nám umožňuje prenášať osobné vizuálne prvky na predmety, ktoré nás obklopujú.
 
 Môj maturitný projekt sa zameriava na 3D vizualizáciu kľúčenok a obalu pre nich s tlačovým výstupom, vytvorenie webstranky ako jeden z prostreidkov komunikacie medzi podnikom a zakaznikom. Táto téma kombinuje inovatívny prístup k personalizácii každodenných predmetov s využitím moderných technológií, ktoré nám umožňujú presné a detailné zobrazenie. Cieľom tejto práce je preskúmať proces vytvárania 3D vizualizácií, aplikovať ich na konkrétny predmet - kľúčenku, a následne vytvoriť fyzický obal.
@@ -52,7 +51,7 @@ Môj maturitný projekt sa zameriava na 3D vizualizáciu kľúčenok a obalu pre
             gLTF je bezplatná špecifikácia pre efektívny prenos a načítanie 3D scén a modelov hernymy motormy a aplikáciami. glTF minimalizuje veľkosť 3D aktív a runtime spracovanie potrebné na ich rozbalenie a použitie. glTF definuje rozšíriteľný formát publikovania, ktorý zefektívňuje pracovné postupy tvorby a interaktívne služby tým, že umožňuje interoperabilné používanie 3D obsahu v celom odvetví. glTF 2.0 bol vydaný ako medzinárodná norma \textbf{\href{https://www.iso.org/standard/83990.html}{ISO/IEC 12113:2022}}.
           }
           \item{
-            Materiál PBR, čo je vlastne skratka pre fyzikálne založený renderovací materiál, je virtuálne materiálové potrubie, ktoré dokáže simulovať akýkoľvek druh fyzikálneho materiálu, a tým najmä vylepšiť 3D model.
+            Materiál PBR, čo je vlastne skratka pre fyzikálne založený renderovací materiál, je virtuálne materiálové potrubie, ktoré dokáže simulovať akýkoľvek druh fyzikálneho materiálu.
           }
         \end{itemize}
 
@@ -76,16 +75,14 @@ Môj maturitný projekt sa zameriava na 3D vizualizáciu kľúčenok a obalu pre
             \textbf{\href{https://yandex.ru/dev/bem/}{BEM}} (Block, Element, Modifier) je komponentový prístup k vývoju webových stránok, ktorý je založený na princípe rozdelenia rozhrania do nezávislých blokov. Vyvynuta v Yandexe.
           }
           \item{
+            Task-manager(správca úloh) \textbf{\href{https://gulpjs.com/}{Gulp.js}}. \\
+            Gulp je súprava nástrojov, ktorá vám pomáha automatizovať bolestivé alebo časovo náročné úlohy vo vašom pracovnom postupe vývoja. Tým, že poskytuje len minimálny povrch API, je gulp ľahko naucitelny a jednoduchý na používanie.
+          }
+          \item{
             Pre odobrazenie 3D modelov na webstranke bola použita 3D knižnica jazyka JavaScript \textbf{\href{https://github.com/mrdoob/three.js/}{three.js}}
           }
           \item{
             Na animáciu modelov na webovej stránke bola použitá knižnica JavaScript \textbf{\href{https://tweenjs.github.io/tween.js/}{tween.js}}.
-          }
-          \item{
-            Task-manager(správca úloh) \textbf{\href{https://gulpjs.com}{Gulp.js}}
-
-            Gulp je súprava nástrojov, ktorá vám pomáha automatizovať bolestivé alebo časovo náročné úlohy vo vašom pracovnom postupe vývoja. \\
-            Tým, že poskytuje len minimálny povrch API, je gulp ľahko naučiteľný a jednoduchý na používanie.
           }
           \item{
             Hosting pre webstranku \textbf{\href{https://pages.github.com/}{GitHub Pages}} 
@@ -98,12 +95,12 @@ Môj maturitný projekt sa zameriava na 3D vizualizáciu kľúčenok a obalu pre
       3D vizualizácia je moderná technika prezentácie objektov alebo scén v trojrozmernom priestore. V obalovej technike slúži na vytvorenie realistických a detailných vizualizácií obalov, čo poskytuje lepší pohľad na konečný výsledok. Táto metóda umožňuje prehľadnú prezentáciu vzhľadu obalu v rôznych perspektívach, čím zjednodušuje proces dizajnu a poskytuje lepšiu predstavu zákazníkom.
 
     \subsection{Význam a aplikácie v obalovej technike}
-      V obalovej technike hraje 3D vizualizácia kľúčovú úlohu v celom procese tvorby obalov. Od návrhu a dizajnu po prezentáciu a schvaľovanie, 3D vizualizácia poskytuje holistický pohľad na výsledný produkt. Umožňuje dizajnérom a inžinierom pracovať so skutočnými priestorovými parametrami, zohľadňujúc rôzne uhly pohľadu a svetelné podmienky. To vedie k vytvoreniu precíznych a realistických vizualizácií, ktoré sú kľúčové pre správne pochopenie vzhľadu obalu pred jeho fyzickým vytvorením.
+      V obalovej technike hraje 3D vizualizácia kľúčovú úlohu v celom procese tvorby obalov. 3D vizualizácia poskytuje komplexný pohľad na konečný produkt - od konceptu a návrhu až po prezentáciu a schválenie. Umožňuje dizajnérom a inžinierom pracovať so skutočnými priestorovými parametrami, zohľadňujúc rôzne uhly pohľadu a svetelné podmienky. To vedie k vytvoreniu precíznych a realistických vizualizácií, ktoré sú kľúčové pre správne pochopenie vzhľadu obalu pred jeho fyzickým vytvorením.
 
 Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajne. Je to tiež účinný nástroj pri prezentácii produktov pred zákazníkmi a partnermi. Realistické vizualizácie umožňujú potenciálnym zákazníkom vidieť produkt v jeho plnej kráse ešte predtým, než sa fyzicky vyrobí. To zvyšuje dôveru zákazníkov a umožňuje rýchlejšie schvaľovanie návrhov.
 
     \subsection{Vlastnosti a parametre vhodné pre 3D vizualizáciu na obale}
-      Pri vytváraní 3D vizualizácie obalu je nevyhnutné venovať pozornosť niekoľkým kritickým vlastnostiam a \\ parametrom. Prvým a najdôležitejším faktorom je presná reprezentácia geometrie a materiálov obalu. Toto zahŕňa detaily ako tvar, rozmery, a štruktúru povrchu. Vytváranie presného 3D modelu vyžaduje nielen technickú zručnosť, ale aj estetický cit pre detaily.
+      Pri vytváraní 3D vizualizácie obalu je nevyhnutné venovať pozornosť niekoľkým kritickým vlastnostiam a parametrom. Prvým a najdôležitejším faktorom je presná reprezen-\\tácia geometrie a materiálov obalu. Toto zahŕňa detaily ako tvar, rozmery, a štruktúru povrchu. Vytváranie presného 3D modelu vyžaduje nielen technickú zručnosť, ale aj estetický cit pre detaily.
 
       Ďalším kľúčovým aspektom je správne nastavenie textúr a farieb. Textúry pridávajú dojem reálnosti a autenticity k 3D modelu, zatiaľ čo farby môžu ovplyvniť vnímanie produktu. Lesk a reflexie sú ďalšie parametre, ktoré treba zohľadniť, pretože ovplyvňujú, ako svetlo interaguje s povrchom obalu a prispieva k celkovej vizuálnej kvalite.
 
@@ -147,8 +144,8 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
       Logo bolo vytvorené na základe názvu spoločnosti s použitím uvedeného písma. Názov spoločnosti možno rozdeliť na dve časti G a KChains. Veľké písmeno G znamená "game" (z anglického Hra), druhá časť je skratkou slova keychains (z anglického Kľúčenka).
 
       \begin{center}
-        \includegraphics{logo}
       \end{center}
+      \includegraphics[width=13cm]{logo}
 
     \subsection{Modelovanie}
       Pri modelovaní som použil rôzne nastroje ktore poskytuje Blender. Ako napríklad Extrude, Shader ediror, UV editor, Modiffires, Move, Rotate, Scale a td. Pri modelovani som použil dva rôzne štyle modelovania:
@@ -185,8 +182,7 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
 
         \begin{tabular}{c c}
           \includegraphics[width=6cm]{box/14} & \includegraphics[width=6cm]{box/15} \\
-          Dlhsia strana & Kratsia strana \\
-          \multicolumn{2}{c}{\includegraphics[width=8cm]{box/16}} \\
+          Dlhsia strana & Kratsia strana \\ \multicolumn{2}{c}{\includegraphics[width=8cm]{box/16}} \\
           \multicolumn{2}{c}{Posledna horna cast modelu:}
         \end{tabular}
 
@@ -252,7 +248,7 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
           3
         \end{center}
 
-        Potom som v strede objektu vyrezal dieru pomocou modifikátora Boolean. Pidal som poslednu čast modelu: \\
+        Potom som v strede objektu vyrezal dieru pomocou modifikátora Boolean. Pidal som kruh pomocou splajnu: \\
         \begin{center}
           \includegraphics[width=6cm]{keychains/7}
         \end{center}
@@ -275,7 +271,7 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
       Landing page je jednostránková internetová stránka so stručnými informáciami o produkte, službe alebo udalosti. Jej úlohou je premeniť návštevníkov na zákazníkov.
  
       \subsubsection{Disajn}
-      Dizajn bol vyhotovený v zelenej farbe a v rôznych odtieňoch tejto farby. Táto farba bol, pretože podľa psychológie farieb je vhodná na prilákanie klientov oboch pohlaví. Hotovú paletu farieb som našiel na stránke \textbf{\href{https://color.adobe.com/ru/}{Adobe Color}}.
+      Dizajn bol vyhotovený v zelenej farbe a v rôznych odtieňoch tejto farby. Táto farba bola použitá, pretože podľa psychológie farieb je vhodná na prilákanie klientov oboch pohlaví. Hotovú paletu farieb som našiel na stránke \textbf{\href{https://color.adobe.com/ru/}{Adobe Color}}.
 
       \begin{center}
         \includegraphics[width=10cm]{web/1}
@@ -340,26 +336,25 @@ Využitie 3D vizualizácie v obalovej technike nekončí len pri internom dizajn
       \end{center}
 
       \subsubsection{Kód}
-      Napísal som webovú stránku pomocou HTML, CSS a programovacieho jazyka javascript. Táto časť opisuje, ako som implementoval webovú stránku.
+      Napísal som webovú stránku pomocou \textbf{HTML, CSS} a programovacieho jazyka JavaScript. Táto časť opisuje, ako som implementoval webovú stránku.
       Pre uľahčenie som použil svoju \textbf{\href{https://github.com/SerMeliodas/gulp-template}{šablónu}} pre gulp ktora je v publickom dostupe na mojom GitHub.
 
       \subsubsection*{HTML + SCSS}
 
-      Kód som písal postupne od hlavičky po časť "Kontaktujte nás". Pri písaní stránky som použil metodiku BEM.
-      V kóde boli použité rôzne tagy ktore nam poskytuje HTML versie 5.
+      Kód som písal postupne od hlavičky po časť "Kontaktujte nás". Pri písaní stránky som použil metodiku \textbf{BEM}.
+      V kóde boli použité rôzne tagy ktore nam poskytuje \textbf{HTML} versie 5.
 
-      \subsubsection*{Scss premenne}
+      \subsubsection*{SCSS premenne}
       Tu sú definované farebné premenné pre štýly, ktoré možno ďalej používať s týmito názvami
-      \begin{lstlisting}[language=css]
+\begin{lstlisting}[language=css]
 $background-color: #005a5b ;
 $first-color: #003840;
 $second-color: #007369;
 $third-color: #008c72;
 $fourth-color: #02a676;
-      \end{lstlisting}
+\end{lstlisting}
 
-      \subsubsection*{Štýly vynulovania}
-      Slúžia na resetovanie štandartnych štýlov priradených tagom prehliadačom
+      \subsubsection*{Štýly vynulovania} Slúžia na resetovanie štandartnych štýlov priradených tagom prehliadačom
 \begin{lstlisting}[language=css]
 *{
 	padding: 0;
@@ -486,7 +481,162 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 </section>
 \end{lstlisting}
       \subsubsection*{JavaScript}
+        Programovací jazyk JavaScript bol v projekte použitý výlučne pre sekciu s produktmi spoločnosti na implementáciu možnosti zobrazenia 3D modelov kľúčeniek. Pred začatím písania implementácie som na internete hľadal metódy vykresľovania (zobrazovania) 3D objektov na webovej stránke. Podľa výsledkov vyhľadávania bola najobľúbenejšia knižnica three.js, ktorú som sa rozhodol použiť vo svojom projekte. \\
 
+\begin{lstlisting}[language=html]
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/20.0.0/tween.umd.js"></script>
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.149.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.149.0/examples/jsm/",
+    }
+  }
+</script>
+.
+<!-- pripojenie index.js suboru. -->
+<script type="module" src="js/index.js"></script>
+\end{lstlisting}
+
+
+          Importovanie všetkých potrebnych modulov z knižnice. Napriklad GLTFLoader ulohou ktoreho je importovanie gltf2 suborov.
+\begin{lstlisting}[language=JavaScript]
+import * as th from "three";
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'; 
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
+import { FXAAShader } from 'three/addons/shaders/FXAAShader.js';
+\end{lstlisting}
+
+          Inicializácia premenných. Väčšina premenných sú potrebné pre nastavenie scény. Napríklad v premennej \textbf{scene} chráni sa objekt scény a v \textbf{camera} sa chráni objekt kamery:
+\begin{lstlisting}[language=javascript]
+let fxaaPass, renderPass, composer;
+// all models to load
+let modelsPath = ["portal2.glb", "bullet.glb", "sharingan.glb", "shieldBattery.glb", "triquetra.glb", "thor.glb"]
+// models group
+let modelsGroup = new th.Group();
+// three js init variables
+let scene, renderer;
+let camera, container;
+let gltfLoader = new GLTFLoader();
+let buttons = {
+  "forward": document.getElementById("forward"),
+  "backward": document.getElementById("backward")
+}
+let flag = false;
+\end{lstlisting}
+
+        Priradenie funkcie spätného volania k udalosti kliknutia pre prvky tlačidla určené na otáčanie skupiny modelov pozdĺž ich hlavnej osi\textbf{y}:
+\begin{lstlisting}[language=javascript]
+// adding callback functions to the event
+buttons["forward"].addEventListener("click", buttonCallback);
+buttons["backward"].addEventListener("click", buttonCallback);
+//buttons callback function
+function buttonCallback(event) {
+  if (event.target.id === "forward" && !flag){
+    flag = true;
+    smoothRotate(Math.PI * (1 / modelsPath.length) * 2);
+  } else if (event.target.id === "backward" && !flag){
+    flag = true;
+    smoothRotate(-Math.PI * (1 / modelsPath.length) * 2);
+  }
+}
+// smooth rotation
+function smoothRotate(angle) {
+  let modelsGroupTween = new TWEEN.Tween(modelsGroup.rotation);
+  let rotateTo = modelsGroup.rotation.y + angle;
+  modelsGroupTween.easing(TWEEN.Easing.Quadratic.InOut).onComplete(() => {flag = false}).to({ y: rotateTo }, 1000).start();
+}
+\end{lstlisting}
+        Funkcie, ktoré načítajú modely na webovú stránku a umiestňujú ich na scénu:
+\begin{lstlisting}[language=javascript]
+// load gltf2 model
+function loadModel(url) {
+  return new Promise((resolve, reject) => {
+    gltfLoader.load(url, gltf => {
+      resolve(gltf.scene)
+    }, undefined, error => {
+      reject(error);
+    })
+  });
+}
+// loading models and setup the startup position
+function loadModels(models) {
+  let points = new th.EllipseCurve(0, 0, 10, 10).getPoints(models.length);
+  let promises = [];
+  models.forEach((element, index) => {
+    promises.push(loadModel(`models/${element}`).then(model => {
+      model.name = element;
+      model.position.x = points[index].x;
+      model.position.z = points[index].y;
+      modelsGroup.add(model);
+    }));
+  });
+  modelsGroup.rotation.y += 0.515
+  scene.add(modelsGroup);
+}
+\end{lstlisting}
+        Funkcia, ktorá animuje modely na webovej stránke:
+\begin{lstlisting}[language=javascript]
+// animations
+function animate(time) {
+  time *= 0.001
+  requestAnimationFrame(animate);
+  TWEEN.update();
+  modelsGroup.children.forEach(element => {
+    element.rotation.y = time;
+  });
+  composer.render();
+}
+\end{lstlisting}
+        Funkcia, ktorá pridáva smerové svetlo na scénu:
+\begin{lstlisting}[language=javascript]
+//add  directional light
+function addLight() {
+  const directionalLight = new th.DirectionalLight(0xffffff, 0.2);
+  const hemisphereLight = new th.HemisphereLight(0xedfcfc, 0x080820, 5);
+  directionalLight.position.set(3,3,5);
+  directionalLight.rotateY(10);
+  scene.add(directionalLight);
+  scene.add(hemisphereLight);
+}
+\end{lstlisting}
+        Funkcia, ktorá inicializuje celé nastavenia a scénu:
+\begin{lstlisting}[language=javascript]
+function init() {
+  container = document.getElementById("scene");
+  scene = new th.Scene();
+  camera = new th.PerspectiveCamera(80, container.offsetWidth / container.offsetHeight, 0.1, 1000);
+
+  renderer = new th.WebGLRenderer({
+    alpha: true,
+  });
+  renderer.setSize(container.offsetWidth, container.offsetHeight);
+  container.appendChild(renderer.domElement);
+
+  composer = new EffectComposer( renderer );
+  renderPass = new RenderPass(scene, camera);
+  fxaaPass = new ShaderPass( FXAAShader );
+
+  const pixelRatio = renderer.getPixelRatio();
+
+  fxaaPass.material.uniforms[ 'resolution' ].value.x = 1 / ( container.offsetWidth * pixelRatio );
+  fxaaPass.material.uniforms[ 'resolution' ].value.y = 1 / ( container.offsetHeight * pixelRatio );
+  composer.addPass( renderPass );
+  composer.addPass( fxaaPass );
+
+  camera.position.z = 15;
+  camera.lookAt(modelsGroup.position);
+
+  addLight();
+  loadModels(modelsPath);
+
+  animate();
+}
+// call the init function
+init();
+\end{lstlisting}
   \newpage
   \section{Cenova kalkulacia}
 
@@ -504,37 +654,37 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     \hline
     NeoVim & 0\EurCr \\
     \hline
-    \textbf{Súčet} & 16\EurCr \\
+    LightBurn(Prvy mesiac zadarmo) & 0\EurCr \\
+    \hline
+    \textbf{Súčet} & \textbf{16\EurCr} \\
     \hline
 
   \end{tabular}
 
   \newpage
   \section{Zaver}
+Na záver tohto projektu by som vám chcel povedať o svojich pocitoch a skúsenostiach, ktoré som získal počas práce na ňom.
 
+Po prvé, moje zručnosti pri používaní rôznych 2D a 3D grafických aplikácií sa dostali na novú úroveň, čo mi v budúcnosti umožní rýchlo sa naučiť zložitejšie grafické techniky. Zlepšili sa aj moje zručnosti pri používaní rôznych technológií, ktoré som si vybral pre tento projekt, napríklad moje znalosti a skúsenosti s používaním programovacieho jazyka JavaScript sú teraz rádovo lepšie, rovnako ako značkovací jazyk HTML a jazyk štýlov CSS.
+
+Môj názor na 3D vizualizáciu sa pravdepodobne veľmi nelíši od ostatných. Myslím si, že ide o veľmi perspektívnu oblasť, ktorá je nákladovo efektívna pre spoločnosti všetkých veľkostí v najrôznejších oblastiach, napríklad v oblasti IT a obalového dizajnu.  Jednou z hlavných výhod je podľa môjho názoru vizualizácia toho, ako bude obal skutočne vyzerať, bez materiálových nákladov.
+
+Na záver by som chcel poďakovať všetkým svojim profesorom v odborných disciplínach.
   \newpage
   \section{Zoznam použitej literatúry}
 
     \begin{enumerate}
-      \item{
-          Oficiálna wikipedia operačného systému arch linux \\
-          \url{https://wiki.archlinux.org/title/Neovim}
-      }
-      \item{
-          Štyly modelovania\\
-          \url{https://akidon-y.github.io/site/rangs.html}
-      }
-      \item{
-          Príspevok o psychológii farieb.\\
-          \url{https://habr.com/ru/companies/lpcloud/articles/236439/}
-      }
-      \item{
-          Príspevok o PVA lepidle \\
-          \url{https://t.ly/JRhHG}
-      }
-      \item{
-          Príspevok o landing page \\
-          \url{https://www.sberbank.ru/ru/s_m_business/pro_business/kak-sozdat-prodayushchij-lending-dlya-prodazh/}
-      }
+      \item{\url{https://wiki.archlinux.org/title/Neovim}}
+      \item{\url{https://akidon-y.github.io/site/rangs.html}}
+      \item{\url{https://habr.com/ru/companies/lpcloud/articles/236439/}}
+      \item{\url{https://t.ly/JRhHG}}
+      \item{\url{https://www.sberbank.ru/ru/s_m_business/pro_business/kak-sozdat-prodayushchij-lending-dlya-prodazh/}}
+      \item{\url{https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene}}
+      \item{\url{https://gulpjs.com/}}
+      \item{\url{https://www.khronos.org/gltf/}}
+      \item{\url{https://yandex.ru/dev/bem/}}
+      \item{\url{https://developer.mozilla.org/en-US/docs/Web/JavaScript}}
+      \item{\url{https://sass-lang.com/}}
+      \item{\url{https://www.blender.org/}}
     \end{enumerate}
 \end{document}
